@@ -9,4 +9,4 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install pytest
-      - run: PYTHONPATH=src pytest -q
+      - run: PYTHONPATH=$(pwd)/src pytest -q
