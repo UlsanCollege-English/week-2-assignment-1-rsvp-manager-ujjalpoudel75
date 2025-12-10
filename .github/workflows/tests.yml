@@ -9,4 +9,7 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install pytest
-      - run: PYTHONPATH=$(pwd)/src pytest -q
+        - run: |
+          echo "Current directory: $(pwd)"
+          ls -l
+          PYTHONPATH=$(pwd)/src pytest -q
